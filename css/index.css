@@ -168,6 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 #barcontainer {
   display: flex;
   justify-content: center;
@@ -183,7 +186,10 @@ img {
   align-items: baseline;
   flex-direction: row;
   max-width: 90%;
-  width: 100%;
+  width: 100% /*  @media @mobile { // Why is this broken?
+
+            .order(center,center,column);
+        } */;
 }
 #topbarnav {
   display: flex;
@@ -217,6 +223,7 @@ img {
   padding: 10px;
   font-size: 1.8rem;
   text-align: center;
+  text-decoration: none;
 }
 .home header {
   border-bottom: 2px dashed #C0C0C0;
