@@ -209,6 +209,15 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.btn {
+  background-color: #008081;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  color: #fafafa;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+}
 .home header {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 2%;
