@@ -1,3 +1,27 @@
+@keyframes shake { // Animation for buttons
+  0% {
+    transform: rotate(0.02turn);
+  }
+  50% {
+    transform: rotate(-0.02turn);
+  }
+  100% {
+    transform: rotate(0.02turn);
+  }
+}
+
+@keyframes shrinkgrow { // Animation for buttons on mobile
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 .home {
 
   header {
@@ -100,6 +124,18 @@
   .content-destination {
     width: 100% !important;
   }
+}
+
+.btn {
+  .defaultbutton (10px,1.8rem);
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+
+  @media @mobile {
+    animation: shrinkgrow 2s;
+    animation-iteration-count: infinite;
+  }
+
 }
 
 
