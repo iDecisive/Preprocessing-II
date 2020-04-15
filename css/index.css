@@ -288,6 +288,9 @@ a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home a:hover {
+  background-color: #ffffff;
+}
 .home .content-section {
   flex-direction: column;
   align-items: center;
