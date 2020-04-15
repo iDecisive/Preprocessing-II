@@ -1,1 +1,21 @@
 // Mixins in here
+
+.order(@justify, @align, @direction) {
+
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+
+}
+
+.defaultbutton(@bsize, @fsize) {
+    background-color: #008081;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    color:rgb(250, 250, 250);
+    padding: @bsize;
+    font-size: @fsize;
+    text-align: center;
+    text-decoration: none;
+}
