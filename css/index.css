@@ -186,23 +186,33 @@ a {
   align-items: baseline;
   flex-direction: row;
   max-width: 90%;
-  width: 100% /*  @media @mobile { // Why is this broken?
-
-            .order(center,center,column);
-        } */;
+  width: 100%;
 }
 #topbarnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-basis: 15%;
+  width: 30%;
 }
 #topbarnav a {
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  #topbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  #topbar nav {
+    width: 80% !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 }
 .footer {
   width: 100%;
@@ -277,4 +287,24 @@ a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-section {
+  flex-direction: column;
+  align-items: center;
+}
+.home .content-section div {
+  width: 100% !important;
+}
+.home .inverse-content {
+  flex-direction: column-reverse !important;
+}
+.home .content-pick {
+  flex-direction: column;
+  align-items: center;
+}
+.home .destination {
+  width: 100% !important;
+}
+.home .content-destination {
+  width: 100% !important;
 }
